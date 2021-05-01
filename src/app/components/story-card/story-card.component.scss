@@ -1,0 +1,38 @@
+.story {
+  padding: 1em;
+  margin: 1em;
+  border: solid 1px;
+  border-color: var(--borderColor);
+  border-radius: 5px;
+
+  float: left;
+  width: 250px;
+
+  .author {
+
+    .author-avatar {
+      width: 55px;
+      height: 55px;
+      border-radius: 3px;
+      border-color: var(--borderColor);
+      background-color: green;
+    }
+
+    .author-name {
+      font-size: smaller;
+      color: rgb(102, 102, 102);
+      padding: .5em 0;
+    }
+
+  }
+
+  .story-title {
+    padding: .5em 0;
+  }
+
+  .story-info {
+    font-size: x-small;
+    color: rgb(102, 102, 102);
+  }
+
+}

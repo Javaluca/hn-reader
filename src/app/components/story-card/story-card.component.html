@@ -1,0 +1,14 @@
+<div class="story">
+  <div class="author">
+    <div class="author-avatar"></div>
+    <div class="author-name">{{ story.by }}</div>
+  </div>
+
+  <div class="story-title">
+    {{ story.title }}
+  </div>
+
+  <div class="story-info">
+    {{story.type}} - {{ story.time | date: 'dd/MM/yyyy HH:mm' }}
+  </div>
+</div>
