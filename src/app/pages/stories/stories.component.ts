@@ -5,7 +5,7 @@ import { HackerNewsService } from 'src/app/services/hacker-news.service';
 @Component({
   selector: 'app-stories',
   templateUrl: './stories.component.html',
-  styleUrls: ['./stories.component.sass']
+  styleUrls: ['./stories.component.scss']
 })
 export class StoriesComponent implements OnInit {
 

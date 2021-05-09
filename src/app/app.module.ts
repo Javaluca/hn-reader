@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { StoriesComponent } from './pages/stories/stories.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StoryCardComponent } from './components/story-card/story-card.component';
+import { HorizontalScrollDirective } from './directives/horizontal-scroll.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoriesComponent,
-    StoryCardComponent
+    StoryCardComponent,
+    HorizontalScrollDirective
   ],
   imports: [
     BrowserModule,

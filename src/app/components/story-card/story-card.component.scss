@@ -4,9 +4,21 @@
   border: solid 1px;
   border-color: var(--borderColor);
   border-radius: 5px;
-
+  transition: transform .2s; /* Animation */
   float: left;
   width: 250px;
+  background-color: var(--backgroundColor);
+
+
+  &:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    background-color: linear-gradient(
+      45deg,
+      rgba(31, 31, 31, 0.5),
+      rgba(60, 60, 60, 0.5) 100%
+    );
+  }
 
   .author {
 
@@ -16,6 +28,11 @@
       border-radius: 3px;
       border-color: var(--borderColor);
       background-color: green;
+      text-align: end;
+      line-height: 55px;
+      font-size: 35px;
+      padding-right: 5px;
+      text-shadow: 0 0 2px #000;
     }
 
     .author-name {

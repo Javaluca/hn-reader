@@ -1,5 +1,9 @@
-<ul>
+<div class="title">
+  Random <strong>HackerNews</strong> reader
+</div>
+
+<div class="container no-scroll" appHorizontalScroll>
   <ng-container *ngFor="let story of stories">
-    <app-story-card [story]="story"></app-story-card>
+      <app-story-card [story]="story"></app-story-card>
   </ng-container>
-</ul>
+</div>
