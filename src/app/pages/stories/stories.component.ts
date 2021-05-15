@@ -12,7 +12,6 @@ export class StoriesComponent implements OnInit {
 
   private _stories: Story[];
 
-  private _loading: boolean = true;
 
   constructor(private readonly hnService: HackerNewsService) { }
 
@@ -20,16 +19,9 @@ export class StoriesComponent implements OnInit {
     this.loadNews();
   }
 
-  get loading(): boolean {
-    return this._loading || false;
-  }
-
   private loadNews() {
-    this._loading = true;
-    this.hnService.topStories().subscribe(
-      stories => this._stories = stories,
-      error => console.log(error),
-      () => this._loading = false);
+    this.hnService.topStories()
+      .subscribe(stories => this._stories = stories);
   }
 
   get stories(): Story[] {
