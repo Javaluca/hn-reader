@@ -3,7 +3,14 @@
 </div>
 
 <div class="container no-scroll" appHorizontalScroll>
-  <ng-container *ngFor="let story of stories">
+  <ng-container *ngIf="loading; else loaded">
+    <div class="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </ng-container>
+  <ng-container #loaded *ngFor="let story of stories">
       <app-story-card [story]="story"></app-story-card>
   </ng-container>
 </div>
